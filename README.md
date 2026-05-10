@@ -1,9 +1,9 @@
 Для работы с json:
-\```bash
-sudo apt install nlohmann-json3-dev
-\```
 
-\```bash
+sudo apt install nlohmann-json3-dev
+
+
+
 git clone https://github.com/LevDzhagupovMSU/scanner.git
 cd scanner
 
@@ -13,7 +13,7 @@ cmake ..
 make
 
 ./bin/task1
-\```
+
 
 
 При запуске введите период сканирования в секундах.
