@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(task1 VERSION 1.0.0)
+project(media_scanner VERSION 1.0.0)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -12,15 +12,15 @@ set(SOURCES
     src/type_file.cpp
 )
 
-add_executable(task1 ${SOURCES})
+add_executable(media_scanner ${SOURCES})
 
 find_package(nlohmann_json REQUIRED)
 
-target_include_directories(task1 PRIVATE
+target_include_directories(media_scanner PRIVATE
     ${CMAKE_SOURCE_DIR}/include
 )
 
-target_link_libraries(task1 PRIVATE
+target_link_libraries(media_scanner PRIVATE
     nlohmann_json::nlohmann_json
     pthread
 )
